@@ -208,7 +208,7 @@ public final class App
   public enum AppOperation {create, read, modify, execute, delete, undelete, hardDelete, changeOwner,
                             enable, disable, getPerms, grantPerms, revokePerms, lock, unlock}
   public enum Permission {READ, MODIFY, EXECUTE}
-  public enum Runtime {DOCKER, SINGULARITY, ZIP}
+  public enum Runtime {DOCKER, SINGULARITY, ZIP, KUBERNETES}
   // NOTE: RuntimeOption starts with NONE due to a bug in client code generation.
   //   Without an initial entry the prefix SINGULARITY_ gets stripped off the other 2 entries.
   //   See also https://github.com/tapis-project/openapi-apps/blob/dev/AppsAPI.yaml
